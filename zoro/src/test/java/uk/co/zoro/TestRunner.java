@@ -1,0 +1,15 @@
+package uk.co.zoro;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions (
+        features = "src/test/resources",
+        tags = "@smoke",
+        plugin ={"json:target/cucumber.json"}
+        )
+
+public class TestRunner {
+}
